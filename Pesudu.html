@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    input:focus{
+        font-size: 20px;
+        font-weight: 400;
+        color: aqua;
+    }
+    /* li:first-child{
+    background-color: blanchedalmond;
+        
+    }
+    li:last-child{
+        background-color: aqua;
+    } */
+    li:nth-child(2n+1){
+        background-color: burlywood;
+    }
+
+    a:visited{
+        color: red;
+    }
+
+    
+    h1::before{
+        content:"Hello " ;
+        color: rgb(206, 206, 20);
+    }
+    .special::after{
+        content: " Bye";
+        color: chartreuse;
+    }
+
+
+
+
+body{
+    counter-reset: section;
+    
+}
+p::before{
+    counter-increment:section ;
+    content: " "counter(section)":";
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+  <h1>Pratic focus</h1>  
+  <input type="text" name="email">
+  <input type="password" name="password" id="">
+
+<h1 class="special">Special class</h1>
+  <h1>Unorder list</h1>
+<ul>
+    <p>solim</p>
+    <p>Karim</p>
+    <p>Rahim</p>
+    <p>Abdul</p>
+    <p>solimui</p>
+</ul>
+
+<a href="http://Youtube.com">Youtube</a>
+
+
+</body>
+</html>
